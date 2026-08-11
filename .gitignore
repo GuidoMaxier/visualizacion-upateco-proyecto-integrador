@@ -1,0 +1,38 @@
+# ── Herramienta / agente ───────────────────────────────────────────
+# Carpeta interna de la herramienta de asistencia (no versionar)
+.reasonix/
+
+# ── Python ─────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+env/
+ENV/
+
+# ── Jupyter / notebooks ────────────────────────────────────────────
+.ipynb_checkpoints/
+*.pkl
+*.h5
+profile_default/
+
+# ── Datos derivados (solo se versionan los datos crudos en data/raw/) ──
+data/processed/
+data/interim/
+data/derived/
+
+# ── Secretos y config local ────────────────────────────────────────
+.env
+.env.*
+!.env.example
+*.local
+
+# ── Sistema operativo / editor ─────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
