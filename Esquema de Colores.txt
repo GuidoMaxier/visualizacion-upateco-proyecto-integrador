@@ -1,0 +1,36 @@
+# Esquema de Colores del Proyecto — Instrucción para el agente de IA
+
+Este archivo define la **paleta oficial de colores** del Proyecto Integrador
+(Visualización y Narrativa de Datos — UPATECO) y cómo debe aplicarla el agente
+en cualquier documento, notebook o visualización de este repositorio.
+
+## Paleta (mapeo semántico)
+
+| Rol / elemento | Color HEX | Uso |
+|---|---|---|
+| Título nivel 1 (`h1`) | `#8B5CF6` (violeta) | Encabezados principales |
+| Título nivel 2 (`h2`) | `#de9f68` (naranja) | Secciones |
+| Título nivel 3 (`h3`) | `#e391e3` (rosa) | Subsecciones |
+| Título nivel 4 (`h4`) | `#d6a487` (beige/terracota) | Sub-subsecciones |
+| Destacado / blockquote | `#a091e3` (lila claro) | Citas, llamadas de atención |
+| Viñetas y numeración | `#91b9e3` (celeste) | Listas |
+| Resaltado (énfasis) | `#adc261` (verde oliva) | Palabras o frases resaltadas |
+
+## Cómo aplicar (reglas para el agente)
+
+1. En documentos **markdown/HTML** del proyecto (informes, README, entregas), usar
+   estos HEX para los elementos indicados (p. ej. `#8B5CF6` para títulos h1).
+2. En **notebooks y gráficos Plotly**, usar los mismos HEX cuando se quiera mantener
+   la identidad visual del proyecto (template personalizado, colores de trazas,
+   paneles del tablero, tarjetas KPI).
+3. Mantener la paleta **estable**: no introducir colores nuevos fuera de ella salvo
+   necesidad explícita del usuario.
+4. Formato de referencia en HTML: `<font color="#8B5CF6">Texto</font>`.
+   En Plotly/CSS: `color="#8B5CF6"`.
+5. La fuente autoritativa es este archivo; si se modifica, actualizar también la
+   sección "Identidad visual" de `AGENTS.md`.
+
+## Origen
+
+Archivo provisto por el usuario (`Esquema de Colores.txt`, carpeta raíz) para la
+presentación del proyecto. Se reformateó a esta versión legible por IA.

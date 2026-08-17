@@ -14,10 +14,13 @@ Proyecto integrador de la Unidad I: análisis de un dataset de operaciones y con
 │   └── raw/                          # Datos crudos, tal como se entregaron (no se modifican)
 │       └── operacion_organizacion.csv
 ├── notebooks/                        # Análisis y tablero de control (formato Google Colab), por etapa
-│   └── etapa_1/
-│       └── Proyecto_Integrador_Unidad_I.ipynb
+│   ├── etapa_1/
+│   │   └── Proyecto_Integrador_Unidad_I.ipynb
+│   └── etapa_2/
+│       └── Proyecto_Integrador_Etapa_2.ipynb
 ├── docs/                             # Documentación, consigna y logo institucional
 │   ├── Proyecto Integrador Unidad I.pdf
+│   ├── Caso 8.pdf
 │   └── logo_upateco.png
 ├── README.md                         # Este archivo
 └── .gitignore                        # Excluye .reasonix/ y artefactos
@@ -57,13 +60,29 @@ print(df.shape)  # (506, 12)
 
 ## Cómo ejecutar el notebook
 
-1. Abrir [Google Colab](https://colab.research.google.com) → *Archivo → Subir notebook* (o arrastrar `notebooks/etapa_1/Proyecto_Integrador_Unidad_I.ipynb`).
+1. Abrir [Google Colab](https://colab.research.google.com) → *Archivo → Subir notebook* (o arrastrar el `.ipynb` de la etapa correspondiente).
 2. El notebook busca los datos automáticamente en este orden:
    1. **Ruta local** (`operacion_organizacion.csv`, `data/raw/…`)
    2. **URL cruda de GitHub** (variable `GITHUB_RAW` en la celda de carga)
    3. **Google Drive** (montado)
    4. **Subida manual** (último recurso)
 3. *Entorno de ejecución → Ejecutar todo*.
+
+## Etapa 2 — Incorporación de nueva evidencia
+
+En la Etapa 2 se incorpora la **nueva evidencia** del documento institucional de AgroCampo S.A. (*Caso 8* — Informe Técnico de Producción): entre **septiembre y noviembre de 2024** la empresa atravesó una **etapa estacional** (fin de cosecha, preparación de lotes, mantenimiento de maquinaria y menor demanda de mano de obra), contemplada en la planificación anual.
+
+`notebooks/etapa_2/Proyecto_Integrador_Etapa_2.ipynb` revisa el tablero de la Etapa 1 a la luz de esta información:
+
+1. **Qué información nueva aporta el documento** (contexto organizacional que faltaba en la Etapa 1).
+2. **Qué conclusiones se mantienen** (relaciones estructurales: `Actividad` como meta, concentración de incidentes, eficiencias por Unidad).
+3. **Qué conclusiones se modifican y por qué**: la ventana sep–nov 2024 (5,10 inc/op vs 2,00 en 2023) se reencuadra como **período estacional con agravamiento real** — fuera de la ventana, 2024 fue mejor que 2023.
+4. **Suficiencia de los indicadores**: los KPIs globales enmascaran la estacionalidad (2,37 inc/op global vs 5,10 en la ventana y 1,96 en el resto de 2024).
+5. **Nuevos KPIs** con baseline interanual (tasa de incidentes por operación en la ventana, índice de estacionalidad, variación interanual de la ventana, cumplimiento/eficiencia en la ventana, peso de la ventana, resultado por operación).
+6. **Recomendaciones actualizadas** para la Gerencia de Producción (mantener/ajustar/nueva).
+7. **Reflexión final** sobre cómo la nueva evidencia modificó (o confirmó) la interpretación, incluida la corrección del cumplimiento promedio (**1,386**, no 1,05).
+
+> La entrega de la Etapa 2 es la **presentación oral del tablero actualizado** y la defensa de las decisiones ante la Gerencia de Producción.
 
 ## Entregables del proyecto
 
